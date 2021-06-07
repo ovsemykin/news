@@ -9,6 +9,7 @@ class ProfilePage extends React.Component {
 
     console.log("username: " + localStorage.usernam);
     console.log("password: " + localStorage.password);
+    window.location.reload()
   };
 
   render() {

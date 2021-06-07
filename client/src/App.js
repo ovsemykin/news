@@ -8,7 +8,7 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <AppСontent />
+        <AppСontent islogin = {localStorage.login}/>
       </div>
     );
   }

@@ -28,6 +28,7 @@ export default class LoggingPage extends Component {
     console.log("username: " + localStorage.username);
     console.log("password: " + localStorage.password);
     this.loginCheck();
+    window.location.reload()
   };
 
   render() {

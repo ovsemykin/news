@@ -12,13 +12,13 @@ import ProfilePage from "./ProfilePage";
 import Container from "react-bootstrap/Container";
 
 class AppСontent extends React.Component {
-  render() {
+  render(props) {
     return (
       <Container className="p-5">
         <Router>
           <Switch>
             <Route exact path="/login">
-              {localStorage.login === "true" ? (
+              {this.props.islogin === "true" ? (
                 <Redirect to="/profile" />
               ) : (
                 <LoggingPage />
@@ -28,7 +28,7 @@ class AppСontent extends React.Component {
               <NewsPage />
             </Route>
             <Route exact path="/profile">
-              {localStorage.login === "true" ? (
+              {this.props.islogin === "true" ? (
                 <ProfilePage />
               ) : (
                 <Redirect to="/login" />
