@@ -1,0 +1,24 @@
+{
+  "name": "news",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "client": "cd client && npm run start",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\""
+  },
+  "description": "cd clients\r npm install",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "Олег Семыкин",
+  "license": "ISC",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovsemykin/news.git"
+  },
+
+  "homepage": "https://github.com/ovsemykin/news#readme"
+
+
+}
